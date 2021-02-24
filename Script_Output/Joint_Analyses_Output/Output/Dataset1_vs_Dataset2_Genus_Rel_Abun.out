@@ -1,0 +1,41 @@
+[1] "Fri Jun 26 12:43:36 2020"
+[1] ‘1.24.2’
+[1] ‘2.1.3’
+
+ dataset1 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 6844 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 6844 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 6844 tips and 6842 internal nodes ]
+
+ dataset2 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 12198 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 12198 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 12198 tips and 12196 internal nodes ]
+
+ Collapsing ASVs by Genus for dataset1: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 445 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 445 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 445 tips and 444 internal nodes ]
+
+ Collapsing ASVs by Genus for dataset2: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 561 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 561 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 561 tips and 560 internal nodes ]
+
+ dataset1 Case/Control included for analysis: 
+
+   Case Control 
+    201     132 
+
+ dataset2 Case/Control included for analysis: 
+
+   Case Control 
+    323     184 

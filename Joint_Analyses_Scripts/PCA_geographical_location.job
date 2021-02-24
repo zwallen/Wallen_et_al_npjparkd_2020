@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#SBATCH --partition=short
+#SBATCH --job-name=PCA_geographical_location
+#SBATCH --error=../Script_Output/Joint_Analyses_Output/ErrorOut/PCA_geographical_location.err
+#SBATCH --output=../Script_Output/Joint_Analyses_Output/Output/PCA_geographical_location.out
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --mem-per-cpu=16000
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=wallenz@uab.edu
+
+module load R/3.5.0-intel-2017a-X11-20170314-bare  
+module unload R
+
+Rscript PCA_geographical_location.R
+

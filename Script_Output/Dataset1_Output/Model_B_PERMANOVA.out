@@ -1,0 +1,170 @@
+[1] "Thu Jun 25 12:23:44 2020"
+[1] ‘1.24.2’
+[1] ‘5.3’
+[1] ‘1.2.1’
+[1] ‘2.5.3’
+[1] ‘1.1’
+
+ Phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 6844 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 6844 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 6844 tips and 6842 internal nodes ]
+
+ Phylogenetic tree now rooted. Most abundant ASV used as root! 
+
+ Case/control included in analysis: 
+
+   Case Control 
+    201     132 
+
+ sex: 
+         
+          Female Male <NA>
+  Case        66  133    2
+  Control     80   52    0
+
+ Case age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  44.00   61.50   69.00   68.33   74.00   94.00       2 
+
+ Control age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  36.00   65.00   70.00   70.21   76.00   88.00 
+
+ Case bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  14.64   22.70   25.82   26.60   30.51   45.64       9 
+
+ Control bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  17.47   24.22   26.54   28.29   32.32   44.99       4 
+
+ location: 
+         
+          Albany,_NY Atlanta,_GA Seattle,_WA <NA>
+  Case            75          31          93    2
+  Control         62          12          58    0
+
+ Case stool travel time: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  1.000   2.000   3.000   3.253   4.000  10.000      11 
+
+ Control stool travel time: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  1.000   2.000   2.000   2.643   3.000   8.000       3 
+
+ loss 10lbs: 
+         
+           No Yes <NA>
+  Case    150  45    6
+  Control 111  15    6
+
+ digest problems day of stool collection: 
+         
+           No Yes <NA>
+  Case     79 104   18
+  Control  93  26   13
+
+ p3m constipation: 
+         
+           No Yes <NA>
+  Case    109  82   10
+  Control 124   6    2
+
+ fruits or vegetables daily: 
+         
+           No Yes <NA>
+  Case     43 151    7
+  Control  15 116    1
+
+ alcohol currently: 
+         
+           No Yes <NA>
+  Case     78 116    7
+  Control  38  93    1
+
+ Model being tested: 
+[1] "Distance ~ case_control+sex+age+bmi+location+stool_travel_time+loss_10lbs+ssdigest_prob+p3m_constipation+fruits_or_vegetables_daily+alcohol_currently"
+
+ Total case/control in analysis after NA filtering: 
+
+   Case Control 
+    160     111 
+
+ ASV counts transformed to proportions for Canberra and Generalized UniFrac distance calculation. 
+
+ ASV counts transformed to centered log-ratio for Aitchison distance calculation. 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(ps.ra), "canberra") ~ case_control + sex + age + bmi + location + stool_travel_time + loss_10lbs + ssdigest_prob + p3m_constipation + fruits_or_vegetables_daily + alcohol_currently, data = as(sample_data(ps.ra), "data.frame"), permutations = 99999, by = "margin")
+                            Df SumOfSqs      R2      F  Pr(>F)    
+case_control                 1    0.633 0.00531 1.4443   4e-05 ***
+sex                          1    0.586 0.00492 1.3383 0.00020 ***
+age                          1    0.512 0.00430 1.1685 0.00962 ** 
+bmi                          1    0.464 0.00390 1.0598 0.13034    
+location                     2    1.006 0.00844 1.1480 0.00196 ** 
+stool_travel_time            1    0.431 0.00361 0.9827 0.58406    
+loss_10lbs                   1    0.428 0.00359 0.9758 0.63834    
+ssdigest_prob                1    0.514 0.00431 1.1735 0.00855 ** 
+p3m_constipation             1    0.442 0.00371 1.0082 0.38993    
+fruits_or_vegetables_daily   1    0.496 0.00416 1.1322 0.02300 *  
+alcohol_currently            1    0.444 0.00373 1.0137 0.35323    
+Residual                   258  113.055 0.94847                   
+Total                      270  119.197 1.00000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(unifracs[, , "d_0.5"]) ~ case_control + sex + age + bmi + location + stool_travel_time + loss_10lbs + ssdigest_prob + p3m_constipation + fruits_or_vegetables_daily + alcohol_currently, data = as(sample_data(ps.ra), "data.frame"), permutations = 99999, by = "margin")
+                            Df SumOfSqs      R2      F  Pr(>F)    
+case_control                 1    0.436 0.01122 3.1299   7e-05 ***
+sex                          1    0.201 0.00517 1.4437 0.07536 .  
+age                          1    0.295 0.00759 2.1177 0.00488 ** 
+bmi                          1    0.185 0.00476 1.3286 0.12231    
+location                     2    0.426 0.01095 1.5275 0.01921 *  
+stool_travel_time            1    0.271 0.00697 1.9444 0.00998 ** 
+loss_10lbs                   1    0.139 0.00359 1.0010 0.41914    
+ssdigest_prob                1    0.157 0.00404 1.1277 0.26777    
+p3m_constipation             1    0.146 0.00376 1.0484 0.35535    
+fruits_or_vegetables_daily   1    0.215 0.00552 1.5408 0.05046 .  
+alcohol_currently            1    0.120 0.00309 0.8620 0.64177    
+Residual                   258   35.950 0.92464                   
+Total                      270   38.880 1.00000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(ps.clr), "euclidean") ~ case_control + sex + age + bmi + location + stool_travel_time + loss_10lbs + ssdigest_prob + p3m_constipation + fruits_or_vegetables_daily + alcohol_currently, data = as(sample_data(ps.clr), "data.frame"), permutations = 99999, by = "margin")
+                            Df SumOfSqs      R2      F  Pr(>F)   
+case_control                 1     2381 0.00583 1.5901 0.00107 **
+sex                          1     2082 0.00510 1.3903 0.00849 **
+age                          1     1854 0.00454 1.2380 0.03981 * 
+bmi                          1     1618 0.00396 1.0802 0.21183   
+location                     2     4062 0.00994 1.3560 0.00158 **
+stool_travel_time            1     1408 0.00345 0.9401 0.65960   
+loss_10lbs                   1     1392 0.00341 0.9292 0.70506   
+ssdigest_prob                1     1837 0.00450 1.2264 0.04280 * 
+p3m_constipation             1     1369 0.00335 0.9139 0.76719   
+fruits_or_vegetables_daily   1     1560 0.00382 1.0415 0.30135   
+alcohol_currently            1     1413 0.00346 0.9437 0.65761   
+Residual                   258   386397 0.94599                  
+Total                      270   408458 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

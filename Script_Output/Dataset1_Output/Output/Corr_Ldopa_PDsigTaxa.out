@@ -1,0 +1,22 @@
+[1] "Thu Jun 25 12:27:58 2020"
+[1] ‘1.24.2’
+[1] ‘2.1.3’
+
+ Collapsing ASVs by Genus: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 445 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 445 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 445 tips and 444 internal nodes ]
+
+ Genera counts transformed to proportions! 
+
+ Extracting target taxa: 
+ [1] "Agathobacter"                 "Faecalibacterium"            
+ [3] "Bifidobacterium"              "Blautia"                     
+ [5] "Roseburia"                    "Fusicatenibacter"            
+ [7] "Prevotella"                   "Lachnospira"                 
+ [9] "Corynebacterium_1"            "Butyricicoccus"              
+[11] "Lachnospiraceae_ND3007_group" "Porphyromonas"               
+[13] "Lactobacillus"                "Lachnospiraceae_UCG-004"     
+[15] "Oscillospira"                

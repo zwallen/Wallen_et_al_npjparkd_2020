@@ -1,0 +1,31 @@
+
+*** Using custom R package library location for 3.5.X ***
+
+
+*** Successfully loaded .Rprofile ***
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+ Package ‘exactRankTests’ is no longer under development.
+ Please consider using package ‘coin’ instead.
+
+
+Attaching package: ‘nlme’
+
+The following object is masked from ‘package:dplyr’:
+
+    collapse
+
+Warning message:
+In FUN(X[[i]], ...) :
+  merge_taxa attempted to reduce tree to 1 or fewer tips.
+ tree replaced with NULL.

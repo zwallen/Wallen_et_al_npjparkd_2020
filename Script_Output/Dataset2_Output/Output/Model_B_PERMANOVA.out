@@ -1,0 +1,152 @@
+[1] "Thu Jun 25 12:26:56 2020"
+[1] ‘1.24.2’
+[1] ‘5.3’
+[1] ‘1.2.1’
+[1] ‘2.5.3’
+[1] ‘1.1’
+
+ Phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 12198 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 12198 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 12198 tips and 12196 internal nodes ]
+
+ Phylogenetic tree now rooted. Most abundant ASV used as root! 
+
+ Case/control included in analysis: 
+
+   Case Control 
+    323     184 
+
+ sex: 
+         
+            F   M
+  Case    117 206
+  Control 129  55
+
+ Case age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  40.00   62.00   68.00   67.69   74.00   91.00 
+
+ Control age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  44.00   61.00   65.50   66.41   72.00   87.00 
+
+ Case bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  16.24   23.88   26.86   27.37   30.24   49.79      11 
+
+ Control bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  17.38   23.73   26.86   27.90   31.21   48.25       4 
+
+ loss 10lbs: 
+         
+           No Yes <NA>
+  Case    237  79    7
+  Control 160  21    3
+
+ digest problems day of stool collection: 
+         
+           No Yes <NA>
+  Case    202 103   18
+  Control 150  26    8
+
+ p3m constipation: 
+         
+           No Yes <NA>
+  Case    174 138   11
+  Control 149  31    4
+
+ alcohol currently: 
+         
+           No Yes <NA>
+  Case    187 133    3
+  Control  80 101    3
+
+ Case stool travel time: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  0.000   3.000   5.000   5.248   6.000  32.000       9 
+
+ Control stool travel time: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  0.000   3.000   5.000   4.973   6.500  17.000       1 
+
+ Model being tested: 
+[1] "Distance ~ case_control+sex+age_GMQ+bmi+loss_10lbs+ssdigest_prob+p3m_constipation+do_you_drink_alcohol+stool_travel_time"
+
+ Total case/control in analysis after NA filtering: 
+
+   Case Control 
+    283     167 
+
+ ASV counts transformed to proportions for Canberra and Generalized UniFrac distance calculation. 
+
+ ASV counts transformed to centered log-ratio for Aitchison distance calculation. 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(ps.ra), "canberra") ~ case_control + sex + age_GMQ + bmi + loss_10lbs + ssdigest_prob + p3m_constipation + do_you_drink_alcohol + stool_travel_time, data = as(sample_data(ps.ra), "data.frame"), permutations = 99999, by = "margin")
+                      Df SumOfSqs      R2      F  Pr(>F)    
+case_control           1    0.623 0.00324 1.4633   2e-05 ***
+sex                    1    0.650 0.00338 1.5275   2e-05 ***
+age_GMQ                1    0.649 0.00338 1.5243   3e-05 ***
+bmi                    1    0.509 0.00265 1.1948 0.00583 ** 
+loss_10lbs             1    0.412 0.00214 0.9673 0.70824    
+ssdigest_prob          1    0.442 0.00230 1.0381 0.20443    
+p3m_constipation       1    0.470 0.00244 1.1032 0.04827 *  
+do_you_drink_alcohol   1    0.455 0.00236 1.0680 0.10693    
+stool_travel_time      1    0.454 0.00236 1.0672 0.10851    
+Residual             440  187.296 0.97431                   
+Total                449  192.234 1.00000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(unifracs[, , "d_0.5"]) ~ case_control + sex + age_GMQ + bmi + loss_10lbs + ssdigest_prob + p3m_constipation + do_you_drink_alcohol + stool_travel_time, data = as(sample_data(ps.ra), "data.frame"), permutations = 99999, by = "margin")
+                      Df SumOfSqs      R2      F  Pr(>F)    
+case_control           1    0.507 0.00622 2.8495   9e-05 ***
+sex                    1    0.399 0.00490 2.2462 0.00159 ** 
+age_GMQ                1    0.508 0.00624 2.8593 0.00014 ***
+bmi                    1    0.274 0.00336 1.5402 0.04251 *  
+loss_10lbs             1    0.125 0.00153 0.7008 0.91322    
+ssdigest_prob          1    0.182 0.00224 1.0241 0.39046    
+p3m_constipation       1    0.309 0.00379 1.7358 0.01672 *  
+do_you_drink_alcohol   1    0.224 0.00275 1.2587 0.14659    
+stool_travel_time      1    0.244 0.00299 1.3714 0.09093 .  
+Residual             440   78.234 0.96068                   
+Total                449   81.436 1.00000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(ps.clr), "euclidean") ~ case_control + sex + age_GMQ + bmi + loss_10lbs + ssdigest_prob + p3m_constipation + do_you_drink_alcohol + stool_travel_time, data = as(sample_data(ps.clr), "data.frame"), permutations = 99999, by = "margin")
+                      Df SumOfSqs      R2      F  Pr(>F)    
+case_control           1     9794 0.00481 2.1885   1e-05 ***
+sex                    1     9793 0.00481 2.1884   2e-05 ***
+age_GMQ                1     9243 0.00454 2.0654   1e-05 ***
+bmi                    1     6706 0.00330 1.4985 0.00316 ** 
+loss_10lbs             1     3973 0.00195 0.8879 0.86626    
+ssdigest_prob          1     4835 0.00238 1.0803 0.19887    
+p3m_constipation       1     5367 0.00264 1.1993 0.05834 .  
+do_you_drink_alcohol   1     5296 0.00260 1.1833 0.06788 .  
+stool_travel_time      1     4735 0.00233 1.0579 0.25834    
+Residual             440  1969094 0.96792                   
+Total                449  2034357 1.00000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

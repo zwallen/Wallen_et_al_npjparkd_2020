@@ -1,0 +1,49 @@
+Variable	PD_Case	PD_Result	Control	Control_Result	Total	Pvalue
+Samples passing 16S QC	201	-	132	-	333	-
+Total Unique ASVs:	201	4863	132	3315	333	-
+Total Genera:	201	404	132	333	333	-
+Samples passing 16S and metadata QC	199	-	132	-	331	-
+Age: Mean;SD	199	68.3;9.2	132	70.2;8.6	331	4.2e-02
+Sex: Male (% Male)	199	133 (67%)	132	52 (39%)	331	1.0e-06
+Geography: Albany,NY/Atlanta,GA/Seattle,WA	199	75/31/93	132	62/12/58	331	-
+Stool sample travel time: Mean;SD	190	3.3;1.9	129	2.6;1.5	319	2.1e-03
+Race: White (%)	199	196 (98%)	132	132 (100%)	331	2.8e-01
+BMI: Mean;SD	192	26.6;5.5	128	28.3;5.7	320	1.7e-02
+Lost 10 pounds in Past Year: N (%)	195	45 (23%)	126	15 (12%)	321	1.3e-02
+Gained 10 pounds in Past Year: N (%)	196	26 (13%)	129	10 (8%)	325	1.5e-01
+Eats fruits or vegetables daily: N (%)	194	151 (78%)	131	116 (89%)	325	1.8e-02
+Eats meat, fish, poultry daily: N (%)	193	110 (57%)	131	82 (63%)	324	3.6e-01
+Eats nuts daily: N (%)	194	43 (22%)	130	36 (28%)	324	2.9e-01
+Eats yogurt at least few times a week: N (%)	191	68 (36%)	128	57 (45%)	319	1.3e-01
+Eats grains daily: N (%)	192	132 (69%)	129	86 (67%)	321	7.2e-01
+Drinks alcohol: N (%)	194	116 (60%)	131	93 (71%)	325	4.5e-02
+Tobacco: N (%)	196	14 (7%)	131	5 (4%)	327	2.4e-01
+Caffeine: N (%)	193	137 (71%)	131	100 (76%)	324	3.1e-01
+Constipation 3 Days or More Prior to Stool Collection: N (%)	196	29 (15%)	129	2 (2%)	325	2.5e-05
+Diarrhea Day of Stool Collection: N (%)	196	6 (3%)	129	2 (2%)	325	4.9e-01
+GI Pain Day of Stool Collection: N (%)	164	14 (9%)	120	8 (7%)	284	6.6e-01
+Excess Gas Day of Stool Collection: N (%)	196	27 (14%)	130	2 (2%)	326	8.5e-05
+Bloating Day of Stool Collection: N (%)	197	20 (10%)	131	3 (2%)	328	7.0e-03
+GI Discomfort Day Of Stool Collection: N (%)	183	104 (57%)	119	26 (22%)	302	1.7e-09
+Constipation in past 3 months: N (%)	191	82 (43%)	130	6 (5%)	321	6.0e-16
+Diarrhea in past 3 months: N (%)	189	32 (17%)	127	28 (22%)	316	3.1e-01
+Colitis: N (%)	192	9 (5%)	130	2 (2%)	322	2.1e-01
+IBS: N (%)	191	14 (7%)	130	8 (6%)	321	8.2e-01
+Crohn's disease: N (%)	193	4 (2%)	131	1 (1%)	324	6.5e-01
+IBD: N (%)	193	5 (3%)	130	2 (2%)	323	7.1e-01
+Ulcers: N (%)	192	18 (9%)	130	9 (7%)	322	5.4e-01
+Intestinal Disease: N (%)	193	38 (20%)	131	19 (15%)	324	2.4e-01
+Currently taking digestive medications: N (%)	192	60 (31%)	126	22 (17%)	318	6.0e-03
+Currently taking antibiotics: N (%)	193	8 (4%)	130	3 (2%)	323	5.4e-01
+Taken antibiotics in past 3 months: N (%)	190	24 (13%)	130	22 (17%)	320	3.3e-01
+Currently taking anti-inflammatory drugs: N (%)	190	77 (41%)	128	56 (44%)	318	6.4e-01
+Currently taking probiotics: N (%)	184	42 (23%)	128	33 (26%)	312	5.9e-01
+Disease duration: Mean;SD	199	13.8;6.7	-	-	199	-
+Carbidopa/Levodopa: N (%)	187	170 (91%)	-	-	187	-
+Levodopa Dose: Mean;SD	181	763.8;573.8	-	-	181	-
+Dopamine agonist: N (%)	187	99 (53%)	-	-	187	-
+MAO-B inhibitor: N (%)	187	71 (38%)	-	-	187	-
+Amantadine: N (%)	187	49 (26%)	-	-	187	-
+COMT inhibitor: N (%)	187	37 (20%)	-	-	187	-
+Anticholinergics: N (%)	187	8 (4%)	-	-	187	-
+Unmedicated: N (%)	187	3 (2%)	-	-	187	-

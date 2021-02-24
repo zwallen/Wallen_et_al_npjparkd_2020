@@ -1,0 +1,11 @@
+[1] "Mon Jun 29 12:48:52 2020"
+[1] ‘1.24.2’
+
+ Collapsing ASVs by Genus: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 445 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 445 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 445 tips and 444 internal nodes ]
+
+ Genera counts transformed to proportions! 

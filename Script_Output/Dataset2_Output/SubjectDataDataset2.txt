@@ -1,0 +1,43 @@
+Variable	PD_Case	PD_Result	Control	Control_Result	Total	Pvalue
+Samples passing 16S QC	323	-	184	-	507	-
+Total Unique ASVs:	323	9188	184	6667	507	-
+Total Genera:	323	527	184	441	507	-
+Samples passing 16S and metadata QC	323	-	184	-	507	-
+Age: Mean;SD	323	67.7;9	184	66.4;8.3	507	5.2e-02
+Sex: Male (% Male)	323	206 (64%)	184	55 (30%)	507	1.7e-13
+Stool sample travel time: Mean;SD	314	5.2;3.3	183	5;2.6	497	7.3e-01
+Race: White (%)	321	317 (99%)	184	183 (99%)	505	6.6e-01
+BMI: Mean;SD	312	27.4;5	180	27.9;5.9	492	6.2e-01
+Lost 10 pounds in Past Year: N (%)	316	79 (25%)	181	21 (12%)	497	2.9e-04
+Gained 10 pounds in Past Year: N (%)	309	45 (15%)	179	20 (11%)	488	3.3e-01
+Drinks alcohol: N (%)	320	133 (42%)	181	101 (56%)	501	2.8e-03
+Tobacco: N (%)	321	13 (4%)	183	13 (7%)	504	1.5e-01
+Caffeine: N (%)	319	273 (86%)	183	161 (88%)	502	5.0e-01
+Constipation 3 Days or More Prior to Stool Collection: N (%)	302	54 (18%)	176	8 (5%)	478	1.5e-05
+Diarrhea Day of Stool Collection: N (%)	301	12 (4%)	178	5 (3%)	479	6.1e-01
+GI Pain Day of Stool Collection: N (%)	303	27 (9%)	179	3 (2%)	482	1.4e-03
+Excess Gas Day of Stool Collection: N (%)	303	47 (16%)	180	8 (4%)	483	1.6e-04
+Bloating Day of Stool Collection: N (%)	305	36 (12%)	179	9 (5%)	484	1.4e-02
+GI Discomfort Day Of Stool Collection: N (%)	305	103 (34%)	176	26 (15%)	481	3.9e-06
+Constipation in past 3 months: N (%)	312	138 (44%)	180	31 (17%)	492	6.5e-10
+Diarrhea in past 3 months: N (%)	306	80 (26%)	181	54 (30%)	487	4.0e-01
+Colitis: N (%)	316	54 (17%)	180	24 (13%)	496	3.1e-01
+IBS: N (%)	312	17 (5%)	178	14 (8%)	490	3.4e-01
+Crohn's disease: N (%)	314	3 (1%)	180	0 (0%)	494	5.6e-01
+IBD: N (%)	307	9 (3%)	178	4 (2%)	485	7.8e-01
+Ulcers: N (%)	314	6 (2%)	180	4 (2%)	494	1.0e+00
+SIBO: N (%)	305	0 (0%)	177	0 (0%)	482	1.0e+00
+Celiac disease: N (%)	314	0 (0%)	177	0 (0%)	491	1.0e+00
+GI Cancer: N (%)	315	1 (0%)	179	1 (1%)	494	1.0e+00
+Intestinal Disease: N (%)	298	80 (27%)	173	41 (24%)	471	5.1e-01
+Currently taking antibiotics: N (%)	315	13 (4%)	179	7 (4%)	494	1.0e+00
+Taken antibiotics in past 3 months: N (%)	308	63 (20%)	170	33 (19%)	478	8.1e-01
+Disease duration: Mean;SD	323	9.2;7.1	-	-	323	-
+Carbidopa/Levodopa: N (%)	313	266 (85%)	-	-	313	-
+Levodopa Dose: Mean;SD	313	562.5;442.9	-	-	313	-
+Dopamine agonist: N (%)	303	153 (50%)	-	-	303	-
+MAO-B inhibitor: N (%)	318	86 (27%)	-	-	318	-
+Amantadine: N (%)	315	60 (19%)	-	-	315	-
+COMT inhibitor: N (%)	320	13 (4%)	-	-	320	-
+Anticholinergics: N (%)	322	10 (3%)	-	-	322	-
+Unmedicated: N (%)	316	17 (5%)	-	-	316	-

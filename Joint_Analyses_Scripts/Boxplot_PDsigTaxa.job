@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#SBATCH --partition=short
+#SBATCH --job-name=Boxplot_PDsigTaxa
+#SBATCH --error=../Script_Output/Joint_Analyses_Output/ErrorOut/Boxplot_PDsigTaxa.err
+#SBATCH --output=../Script_Output/Joint_Analyses_Output/Output/Boxplot_PDsigTaxa.out
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --mem-per-cpu=16000
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=wallenz@uab.edu
+
+module load R/3.5.0-intel-2017a-X11-20170314-bare
+module unload R
+
+Rscript Boxplot_PDsigTaxa.R
+

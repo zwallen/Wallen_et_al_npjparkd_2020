@@ -1,0 +1,51 @@
+[1] "Thu Jun 25 12:26:52 2020"
+[1] ‘1.24.2’
+[1] ‘2.1.3’
+
+ Collapsing ASVs by Genus: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 561 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 561 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 561 tips and 560 internal nodes ]
+
+ Case/control included in analysis: 
+
+   Case Control 
+    323     184 
+
+ sex: 
+         
+            F   M
+  Case    117 206
+  Control 129  55
+
+ Case age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  40.00   62.00   68.00   67.69   74.00   91.00 
+
+ Control age: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  44.00   61.00   65.50   66.41   72.00   87.00 
+
+ Case bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  16.24   23.88   26.86   27.37   30.24   49.79      11 
+
+ Control bmi: 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  17.38   23.73   26.86   27.90   31.21   48.25       4 
+
+ p3m constipation: 
+         
+           No Yes
+  Case    174 138
+  Control 149  31
+
+ Total case/control in analysis after NA filtering: 
+
+   Case Control 
+    306     177 
+
+ Model being tested: 
+[1] "Genus ~ case_control+sex+age_GMQ+bmi+p3m_constipation"

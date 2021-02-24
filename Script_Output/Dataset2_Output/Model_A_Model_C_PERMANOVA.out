@@ -1,0 +1,382 @@
+[1] "Thu Jun 25 12:26:52 2020"
+[1] ‘1.24.2’
+[1] ‘1.2.1’
+[1] ‘2.5.3’
+[1] ‘1.1’
+
+ Phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 12198 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 12198 taxa by 7 taxonomic ranks ]
+phy_tree()    Phylogenetic Tree: [ 12198 tips and 12196 internal nodes ]
+
+ Phylogenetic tree now rooted. Most abundant ASV used as root! 
+
+ ASV counts transformed to proportions for Canberra and Generalized UniFrac distance calculation. 
+
+ ASV counts transformed to centered log-ratio for Aitchison distance calculation. 
+
+ PERMANOVA for PD vs control 
+
+   Case Control 
+    323     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra) ~ case_control, data = as(sample_data(ps), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.815 0.00375 1.9021  1e-05 ***
+Residual     505  216.282 0.99625                  
+Total        506  217.097 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac) ~ case_control, data = as(sample_data(ps), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.827 0.00893 4.5509  1e-05 ***
+Residual     505   91.781 0.99107                  
+Total        506   92.609 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison) ~ case_control, data = as(sample_data(ps), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    12651 0.00557 2.8282  1e-05 ***
+Residual     505  2258929 0.99443                  
+Total        506  2271580 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for PD not on drugs vs control 
+
+   Case Control 
+     17     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1    0.404 0.00477 0.9544 0.7921
+Residual     199   84.197 0.99523              
+Total        200   84.601 1.00000              
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1    0.174 0.00516 1.0331 0.3723
+Residual     199   33.479 0.99484              
+Total        200   33.653 1.00000              
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1     4330 0.00477 0.9539 0.5763
+Residual     199   903303 0.99523              
+Total        200   907633 1.00000              
+
+ PERMANOVA for PD not on Ldopa vs control 
+
+   Case Control 
+     47     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1    0.453 0.00465 1.0694 0.1072
+Residual     229   96.949 0.99535              
+Total        230   97.402 1.00000              
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1    0.212 0.00543 1.2495 0.1569
+Residual     229   38.787 0.99457              
+Total        230   38.999 1.00000              
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)
+case_control   1     4923 0.00477 1.0965 0.1672
+Residual     229  1028133 0.99523              
+Total        230  1033056 1.00000              
+
+ PERMANOVA for PD not on COMT vs control 
+
+   Case Control 
+    307     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.791 0.00377 1.8487  1e-05 ***
+Residual     489  209.215 0.99623                  
+Total        490  210.006 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.780 0.00875 4.3146  1e-05 ***
+Residual     489   88.378 0.99125                  
+Total        490   89.158 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    12097 0.00549 2.6986  1e-05 ***
+Residual     489  2192051 0.99451                  
+Total        490  2204148 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for PD not on Anticholinergics vs control 
+
+   Case Control 
+    312     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.818 0.00385 1.9099  1e-05 ***
+Residual     494  211.601 0.99615                  
+Total        495  212.419 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.831 0.00917 4.5708  2e-05 ***
+Residual     494   89.849 0.99083                  
+Total        495   90.680 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    12699 0.00571 2.8363  1e-05 ***
+Residual     494  2211832 0.99429                  
+Total        495  2224532 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for PD not on MAO-B inhibitors vs control 
+
+   Case Control 
+    232     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.805 0.00452 1.8799  1e-05 ***
+Residual     414  177.206 0.99548                  
+Total        415  178.011 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs     R2      F Pr(>F)    
+case_control   1    0.810 0.0107 4.4767  1e-05 ***
+Residual     414   74.927 0.9893                  
+Total        415   75.737 1.0000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    13141 0.00705 2.9414  1e-05 ***
+Residual     414  1849629 0.99295                  
+Total        415  1862771 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for PD not on dopamine agonists vs control 
+
+   Case Control 
+    150     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs     R2     F Pr(>F)    
+case_control   1    0.626 0.0044 1.467  4e-05 ***
+Residual     332  141.776 0.9956                 
+Total        333  142.402 1.0000                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs    R2      F  Pr(>F)    
+case_control   1    0.469 0.008 2.6783 0.00033 ***
+Residual     332   58.090 0.992                   
+Total        333   58.558 1.000                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1     8640 0.00573 1.9127  1e-04 ***
+Residual     332  1499647 0.99427                  
+Total        333  1508286 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for PD not on amantadine vs control 
+
+   Case Control 
+    255     184 
+
+ Results for PERMANOVA with Canberra distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(canberra.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs     R2      F Pr(>F)    
+case_control   1    0.691 0.0037 1.6219  1e-05 ***
+Residual     437  186.210 0.9963                  
+Total        438  186.901 1.0000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Generalized UniFrac distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(gen.unifrac.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1    0.569 0.00736 3.2422  3e-05 ***
+Residual     437   76.628 0.99264                  
+Total        438   77.196 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ Results for PERMANOVA with Aitchison distance: 
+Permutation test for adonis under NA model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = as.dist(aitchison.sub) ~ case_control, data = as(sample_data(ps.sub), "data.frame"), permutations = 99999, by = "margin")
+              Df SumOfSqs      R2      F Pr(>F)    
+case_control   1     9382 0.00479 2.1047  3e-05 ***
+Residual     437  1947888 0.99521                  
+Total        438  1957270 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

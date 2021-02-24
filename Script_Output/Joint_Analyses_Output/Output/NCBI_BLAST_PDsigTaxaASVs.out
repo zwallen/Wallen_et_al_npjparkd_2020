@@ -1,0 +1,113 @@
+[1] "Fri Jun 26 12:45:41 2020"
+[1] ‘1.24.2’
+[1] ‘2.1.3’
+[1] ‘3.6.1’
+[1] ‘4.1.3’
+
+ dataset1 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 6844 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 6844 taxa by 7 taxonomic ranks ]
+
+ dataset2 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 12198 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 12198 taxa by 7 taxonomic ranks ]
+
+ Joint phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 16682 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 16682 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Porphyromonas 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 102 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 102 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Prevotella 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 50 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 50 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Corynebacterium_1 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 40 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 40 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Lactobacillus 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 140 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 140 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Bifidobacterium 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 38 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 38 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Agathobacter 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 70 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 70 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Lachnospiraceae_UCG-004 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 41 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 41 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Lachnospiraceae_ND3007_group 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 19 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 19 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Faecalibacterium 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 168 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 168 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Roseburia 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 65 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 65 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Blautia 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 199 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 199 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Oscillospira 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 22 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 22 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Fusicatenibacter 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 34 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 34 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Butyricicoccus 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 85 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 85 taxa by 7 taxonomic ranks ]
+
+ Running for ASVs belonging to Lachnospira 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 65 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 65 taxa by 7 taxonomic ranks ]

@@ -1,0 +1,86 @@
+[1] "Fri Jun 26 12:44:07 2020"
+[1] ‘1.24.2’
+[1] ‘2.5.3’
+[1] ‘1.2.1’
+
+ dataset1 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 6844 taxa and 333 samples ]
+sample_data() Sample Data:       [ 333 samples by 53 sample variables ]
+tax_table()   Taxonomy Table:    [ 6844 taxa by 7 taxonomic ranks ]
+
+ dataset2 phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 12198 taxa and 507 samples ]
+sample_data() Sample Data:       [ 507 samples by 47 sample variables ]
+tax_table()   Taxonomy Table:    [ 12198 taxa by 7 taxonomic ranks ]
+
+ Joint phyloseq object summary: 
+phyloseq-class experiment-level object
+otu_table()   OTU Table:         [ 16682 taxa and 840 samples ]
+sample_data() Sample Data:       [ 840 samples by 64 sample variables ]
+tax_table()   Taxonomy Table:    [ 16682 taxa by 7 taxonomic ranks ]
+
+ PD patient and control count for analysis: 
+
+   Case Control 
+    524     316 
+
+ Geographic location count for analysis: 
+         
+          Albany,_NY Atlanta,_GA Birmingham,_AL Seattle,_WA
+  Case            75          31            323          93
+  Control         62          12            184          58
+
+ Dataset count for analysis: 
+         
+          dataset1 dataset2
+  Case         199      323
+  Control      132      184
+
+ ASV counts transformed using centered log-ratio! 
+
+ Running PERMANOVA using Aitchison distance... 
+
+ PERMANOVA results for Dataset1 vs Dataset2: 
+Permutation test for adonis under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(filt.ps), "euclidean") ~ datasets, data = as(sample_data(filt.ps), "data.frame"), permutations = 99999)
+          Df SumOfSqs      R2      F Pr(>F)    
+datasets   1   166171 0.05655 50.107  1e-05 ***
+Residual 836  2772451 0.94345                  
+Total    837  2938622 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA results for total sequence count: 
+Permutation test for adonis under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(filt.ps), "euclidean") ~ total_seq_count, data = as(sample_data(filt.ps), "data.frame"), permutations = 99999)
+                 Df SumOfSqs      R2      F Pr(>F)    
+total_seq_count   1   158376 0.05384 47.689  1e-05 ***
+Residual        838  2782996 0.94616                  
+Total           839  2941371 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+ PERMANOVA for Dataset1 vs Dataset2 and total sequence count: 
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 99999
+
+adonis2(formula = vegdist(otu_table(filt.ps), "euclidean") ~ datasets + total_seq_count, data = as(sample_data(filt.ps), "data.frame"), permutations = 99999, by = "margin")
+                 Df SumOfSqs      R2      F Pr(>F)    
+datasets          1    32878 0.01119 9.9889  1e-05 ***
+total_seq_count   1    24111 0.00820 7.3253  1e-05 ***
+Residual        835  2748340 0.93525                  
+Total           837  2938622 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

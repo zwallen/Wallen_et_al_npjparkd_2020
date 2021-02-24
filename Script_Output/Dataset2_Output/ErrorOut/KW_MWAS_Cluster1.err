@@ -1,0 +1,10 @@
+
+*** Using custom R package library location for 3.5.X ***
+
+
+*** Successfully loaded .Rprofile ***
+
+Warning message:
+In FUN(X[[i]], ...) :
+  merge_taxa attempted to reduce tree to 1 or fewer tips.
+ tree replaced with NULL.
