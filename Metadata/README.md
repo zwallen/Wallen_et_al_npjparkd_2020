@@ -1,1 +1,1 @@
-Place holder file to make sure Metadata directory shows up on github repository
+Directory to hold metadata excels used for creating phyloseq objects. Limited metadata is available at NCBI Sequence Read Archive (SRA) BioProject ID PRJNA601994. To access full metadata please reach out to corresponding author.
