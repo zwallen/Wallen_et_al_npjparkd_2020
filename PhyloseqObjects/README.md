@@ -1,0 +1,1 @@
+Directory to hold phyloseq objects used for analysis in manuscript. Sequences that were used for creating phyloseq objects and limited metadata is available at NCBI Sequence Read Archive (SRA) BioProject ID PRJNA601994. To access full metadata and/or phyloseq objects please reach out to corresponding author.
